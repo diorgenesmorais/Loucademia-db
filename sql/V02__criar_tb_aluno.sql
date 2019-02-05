@@ -1,0 +1,22 @@
+create table aluno (
+	id varchar(8) not null,
+	nome varchar(64) not null,
+	sexo tinyint(1) unsigned not null,
+	rg int(10) unsigned not null,
+	nascimento date not null,
+	situacao tinyint(1) unsigned not null,
+	email varchar(64),
+	rua varchar(128) not null,
+	numero int(6) unsigned,
+	complemento varchar(32),
+	cidade varchar(64) not null,
+	cep int(8) unsigned not null,
+	estado_id varchar(2) not null,
+	celular_ddd int(2) unsigned,
+	celular_numero int(9) unsigned,
+	fixo_ddd int(2) unsigned,
+	fixo_numero int(9) unsigned,
+	primary key (id),
+	key `FK_aluno_estado` (estado_id),
+	constraint `FK_aluno_estado` foreign key (estado_id) references estado (sigla)
+) engine=InnoDB default charset=utf8;
