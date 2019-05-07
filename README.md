@@ -1,7 +1,5 @@
-# Banco de dados do projeto Loucademia
+# Banco de dados do [projeto Loucademia](https://github.com/diorgenesmorais/loucademia)
 
-Resolvi fazer o projeto do banco de dados do projeto Loucademia usando Flyway
-
-** Authors **
+**Authors**
 
 * Diorgenes Morais
